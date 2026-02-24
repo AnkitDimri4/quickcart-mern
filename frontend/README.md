@@ -174,7 +174,8 @@ Full-stack Developer
 📍 Dehradun, India  
 
 [![GitHub](https://img.shields.io/badge/GitHub-AnkitDimri4-black?logo=github)](https://github.com/AnkitDimri4)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ankit%20Dimri-blue?logo=linkedin)](https://linkedin.com/in/ankit-dimri-a6ab98263)  [![LeetCode](https://img.shields.io/badge/LeetCode-Profile-orange?logo=leetcode)](https://leetcode.com/u/user4612MW/)  
-  ![License](https://img.shields.io/badge/License-MIT-green)  ![Status](https://img.shields.io/badge/Status-Active-brightgreen)  
+![License](https://img.shields.io/badge/License-MIT-green)  ![Status](https://img.shields.io/badge/Status-Active-brightgreen)  ![React](https://img.shields.io/badge/React.js-18-blue?logo=react)  
+![Redux](https://img.shields.io/badge/Redux-State_Management-purple?logo=redux)  ![React Router](https://img.shields.io/badge/React_Router-DOM-red?logo=reactrouter)  ![Material UI](https://img.shields.io/badge/Material_UI-Components-blue?logo=mui)  ![Axios](https://img.shields.io/badge/Axios-API_Requests-green)  ![Chart.js](https://img.shields.io/badge/Chart.js-Analytics-orange)  ![Stripe](https://img.shields.io/badge/Stripe-Payments-purple?logo=stripe)  ![Toastify](https://img.shields.io/badge/React_Toastify-Notifications-brightgreen)
 
 ---
 
