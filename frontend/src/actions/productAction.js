@@ -1,4 +1,4 @@
-import axios from "../axios";
+import axios from "axios";
 
 import {
   ALL_PRODUCT_FAIL,
@@ -53,7 +53,7 @@ export const getProduct =
     } catch (error) {
       dispatch({
         type: ALL_PRODUCT_FAIL,
-        payload: error.response.data.message,
+        payload: error.response?.data?.message || error.message || "Server Error",
       });
     }
   };
@@ -72,7 +72,7 @@ export const getAdminProduct = () => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: ADMIN_PRODUCT_FAIL,
-      payload: error.response.data.message,
+      payload: error.response?.data?.message || error.message || "Server Error",
     });
   }
 };
@@ -99,7 +99,7 @@ export const createProduct = (productData) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: NEW_PRODUCT_FAIL,
-      payload: error.response.data.message,
+      payload: error.response?.data?.message || error.message || "Server Error",
     });
   }
 };
@@ -126,7 +126,7 @@ export const updateProduct = (id, productData) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: UPDATE_PRODUCT_FAIL,
-      payload: error.response.data.message,
+      payload: error.response?.data?.message || error.message || "Server Error",
     });
   }
 };
@@ -145,7 +145,7 @@ export const deleteProduct = (id) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: DELETE_PRODUCT_FAIL,
-      payload: error.response.data.message,
+      payload: error.response?.data?.message || error.message || "Server Error",
     });
   }
 };
@@ -164,7 +164,7 @@ export const getProductDetails = (id) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: PRODUCT_DETAILS_FAIL,
-      payload: error.response.data.message,
+      payload: error.response?.data?.message || error.message || "Server Error",
     });
   }
 };
@@ -187,7 +187,7 @@ export const newReview = (reviewData) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: NEW_REVIEW_FAIL,
-      payload: error.response.data.message,
+      payload: error.response?.data?.message || error.message || "Server Error",
     });
   }
 };
@@ -206,7 +206,7 @@ export const getAllReviews = (id) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: ALL_REVIEW_FAIL,
-      payload: error.response.data.message,
+      payload: error.response?.data?.message || error.message || "Server Error",
     });
   }
 };
@@ -227,7 +227,7 @@ export const deleteReviews = (reviewId, productId) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: DELETE_REVIEW_FAIL,
-      payload: error.response.data.message,
+      payload: error.response?.data?.message || error.message || "Server Error",
     });
   }
 };
