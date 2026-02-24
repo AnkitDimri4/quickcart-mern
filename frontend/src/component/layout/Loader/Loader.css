@@ -1,0 +1,24 @@
+/* Loader.css */
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading > div {
+  width: 5vmax;
+  height: 5vmax;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  border-top-color: rgba(30, 62, 133, 0.8);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

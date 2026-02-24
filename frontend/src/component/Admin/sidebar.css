@@ -1,0 +1,78 @@
+.sidebar {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0;
+}
+
+.sidebar > a:first-child {
+  padding: 0;
+}
+.sidebar > a > img {
+  width: 100%;
+  transition: all 0.5s;
+  transform: scale(0.9);
+}
+.sidebar a {
+  width: 100%;
+  transition: all 0.5s;
+  transform: scale(0.5);
+}
+
+.sidebar > a > img:hover {
+  filter: drop-shadow(0 0 20px rgba(20, 51, 104, 0.812));
+  transform: scale(0.7);
+}
+.sidebar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.493);
+  font: 200 1rem "Roboto";
+  padding: 2rem;
+  transition: all 0.5s;
+}
+.sidebar a:hover {
+  color: tomato;
+  transform: scale(1.1);
+}
+
+.sidebar a > P {
+  display: flex;
+  align-items: center;
+}
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+}
+
+.sidebar .MuiListItemText-primary {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.sidebar .MuiListItemButton-root {
+  padding: 12px 24px;
+  border-radius: 15px;
+  margin: 12px 12px;
+  transition: all 0.3s ease;
+  transform: translateX(10px);
+}
+
+.sidebar .MuiListItemButton-root:hover {
+  background-color: rgba(255, 99, 71, 0.1);
+  color: tomato;
+  transform: translateX(20px);
+}
+
+.sidebar .MuiListItemIcon-root {
+  min-width: 40px;
+  color: #555;
+  transition: 0.3s ease;
+}
+
+.sidebar .MuiListItemButton-root:hover .MuiListItemIcon-root {
+  color: tomato;
+}
+
+.sidebar .MuiCollapse-root .MuiListItemButton-root {
+  padding-left: 48px;
+  font-size: 0.9rem;
+}

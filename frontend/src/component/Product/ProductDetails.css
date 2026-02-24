@@ -1,0 +1,298 @@
+/* Main Container */
+.ProductDetails {
+  background: linear-gradient(135deg, #f8f9fa, #eef1f5);
+  min-height: 100vh;
+  padding: 6rem 8rem;
+  display: flex;
+  gap: 4rem;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Card Style Blocks */
+.ProductDetails > div {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  padding: 3.6rem;
+  transition: all 0.4s ease;
+}
+
+.ProductDetails > div:hover {
+  transform: translateY(-6px);
+}
+
+.carouselContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper {
+  position: relative;
+  transform: scale(1.3);
+  display: flex;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.zoomBox {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  margin-left: 20px;
+
+  width: 400px;
+  height: 400px;
+
+  background-repeat: no-repeat;
+  background-size: 250%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+/* Product Info */
+.productInfoContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detailsBlock-1 h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.detailsBlock-1 p {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Ratings */
+.detailsBlock-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detailsBlock-2-span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Price */
+.detailsBlock-3 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Quantity Controls */
+.detailsBlock-3-1 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.detailsBlock-3-1-1 {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.detailsBlock-3-1-1 button {
+  border: none;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, #b1b2b7d3, #d2ead4d9);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.detailsBlock-3-1-1 button:hover {
+  background: #444;
+}
+
+.detailsBlock-3-1-1 input {
+  width: 40px;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Add to Cart Button */
+.detailsBlock-3-1 > button:last-child {
+  background: linear-gradient(135deg, #8f9ddc, #ce7f60);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.9rem 2.5rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(143, 157, 220, 0.35);
+}
+
+.detailsBlock-3-1 > button:last-child:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(99, 60, 44, 0.45);
+}
+
+.detailsBlock-3-1 > button:last-child:active {
+  transform: scale(0.95);
+}
+
+/* Stock Status */
+.detailsBlock-3 p {
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+/* Description */
+.detailsBlock-4 {
+  margin-top: 1rem;
+}
+
+.detailsBlock-4 p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Review Button */
+.submitReview {
+  background: linear-gradient(135deg, #8f9ddc, #e2c9be);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 15rem;
+  padding: 1.6rem 2.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: 5rem auto;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(143, 157, 220, 0.35);
+}
+
+.submitReview:hover {
+  background: linear-gradient(135deg, #8f9ddc, #2e2724);
+  color: white;
+  transform: translateY(-10px);
+}
+
+/* Reviews Section */
+.reviewsHeading {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 4rem 0 2rem 0;
+  font-weight: 600;
+}
+
+.reviews {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 4rem;
+  overflow-x: auto;
+}
+
+/* Review Card */
+.reviewCard {
+  background: linear-gradient(145deg, #ffffffb2, #e0e3e887);
+  border-radius: 18px;
+  padding: 2rem;
+  min-width: 280px;
+  max-width: 340px;
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.reviewCardComment {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.noReviews {
+  text-align: center;
+  color: #777;
+  margin-bottom: 4rem;
+}
+
+
+
+.submitDialogTextArea {
+  width: 90%;
+  padding: 20px 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  resize: none;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.submitDialogTextArea:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ProductDetails {
+    margin-top: 6rem;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .imageWrapper {
+    position: relative;
+    transform: scale(1.1);
+    display: flex;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  .reviews {
+    padding: 1rem;
+  }
+}

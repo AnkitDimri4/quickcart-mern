@@ -1,0 +1,95 @@
+.contactContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(135deg, #1f2223a9, #542a1c74),
+    linear-gradient(135deg, #d0dae1c7, #fce5deb3);
+  background-blend-mode: overlay;
+  position: relative;
+}
+
+.contactCard {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  max-width: 500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  color: #71140e;
+}
+
+.contactDescription {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.contactButton {
+  background: linear-gradient(90deg, #1f2223a9, #542a1c74);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.contactButton:hover {
+  transform: scale(1.01);
+  background: linear-gradient(90deg, #195f92c7, #dc4b1fb3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contactLinks a {
+  color: #1f2223;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contactLinks a:hover {
+  color: #eb4034;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .contactTitle {
+    font-size: 2rem;
+  }
+  .contactLinks a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactTitle {
+    font-size: 1.8rem;
+  }
+  .contactDescription {
+    font-size: 0.95rem;
+  }
+  .contactLinks {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

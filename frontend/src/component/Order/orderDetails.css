@@ -1,0 +1,143 @@
+/* ===== Page Background ===== */
+
+.orderDetailsPage {
+  background: #fff;
+  min-height: 100vh;
+  padding: 140px 60px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* ===== Left Card (Order Info) ===== */
+
+.orderDetailsContainer {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Right Card (Items) ===== */
+
+.orderDetailsCartItems {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  height: fit-content;
+}
+
+/* ===== Order Title ===== */
+
+.orderDetailsContainer h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #ff5722;
+}
+
+/* ===== Section Headings ===== */
+
+.orderDetailsContainer > p,
+.orderDetailsCartItems > p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 25px 0 15px 0;
+  color: #333;
+}
+
+/* ===== Info Box ===== */
+
+.orderDetailsContainerBox {
+  margin-bottom: 20px;
+}
+
+.orderDetailsContainerBox > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.orderDetailsContainerBox > div > p {
+  font-weight: 600;
+  margin: 0;
+}
+
+.orderDetailsContainerBox > div > span {
+  color: #666;
+}
+
+/* ===== Status Colors ===== */
+
+.greenColor {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.redColor {
+  color: #f44336;
+  font-weight: 600;
+}
+
+/* ===== Cart Items ===== */
+
+.orderDetailsCartItemsContainer {
+  margin-top: 10px;
+}
+
+.orderDetailsCartItemsContainer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.orderDetailsCartItemsContainer img {
+  width: 65px;
+  border-radius: 10px;
+}
+
+.orderDetailsCartItemsContainer a {
+  flex: 1;
+  margin: 0 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.orderDetailsCartItemsContainer a:hover {
+  color: #ff5722;
+}
+
+.orderDetailsCartItemsContainer span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+  .orderDetailsPage {
+    grid-template-columns: 1fr;
+    padding: 140px 60px;
+  }
+
+  .orderDetailsContainer,
+  .orderDetailsCartItems {
+    padding: 25px;
+  }
+
+  .orderDetailsContainer h1 {
+    font-size: 20px;
+  }
+
+  .orderDetailsCartItemsContainer img {
+    width: 50px;
+  }
+}
