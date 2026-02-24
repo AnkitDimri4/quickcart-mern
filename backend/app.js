@@ -15,12 +15,14 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
 
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://quickcart-mern.vercel.app"
+];
+
 app.use(
   cors({
-    origin:
-      process.env.NODE_ENV === "production"
-        ? process.env.FRONTEND_URL
-        : "http://localhost:3000",
+    origin: allowedOrigins,
     credentials: true,
   })
 );
@@ -30,7 +32,6 @@ app.use("/api/v1", require("./routes/productRoute"));
 app.use("/api/v1", require("./routes/userRoute"));
 app.use("/api/v1", require("./routes/orderRoute"));
 app.use("/api/v1", require("./routes/paymentRoute"));
-
 
 app.use(errorMiddleware);
 
