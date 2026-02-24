@@ -5,10 +5,11 @@ const sendToken = (user, statusCode, res) => {
     expires: new Date(
       Date.now() + process.env.COOKIE_EXPIRE * 24 * 60 * 60 * 1000
     ),
+
     httpOnly: true,
-    sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
-    // secure: true,
+
+    sameSite: "none",  
+    secure: true        
   };
 
   res.status(statusCode).cookie("token", token, options).json({
@@ -18,4 +19,4 @@ const sendToken = (user, statusCode, res) => {
   });
 };
 
-module.exports = sendToken; 
+module.exports = sendToken;
