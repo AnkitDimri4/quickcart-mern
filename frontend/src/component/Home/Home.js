@@ -29,7 +29,7 @@ const Home = () => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title="ECOMMERCEPart" />
+          <MetaData title="QuickCart" />
 
           {/* Banner */}
           <div className="banner">
@@ -70,3 +70,4 @@ const Home = () => {
 };
 
 export default Home;
+
