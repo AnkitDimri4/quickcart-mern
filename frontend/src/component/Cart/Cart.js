@@ -6,7 +6,6 @@ import { addItemsToCart, removeItemsFromCart } from "../../actions/cartAction";
 import { Typography, Button } from "@mui/material";
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 import { Link, useNavigate } from "react-router-dom";
-// import axios from "../../axios";
 
 const Cart = () => {
   const dispatch = useDispatch();
