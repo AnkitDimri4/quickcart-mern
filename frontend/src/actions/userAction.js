@@ -36,7 +36,7 @@ import {
   USER_DETAILS_FAIL,
   CLEAR_ERRORS,
 } from "../constants/userConstants";
-import axios from "../axios";
+import axios from "../axiosIn";
 
 // Login
 // export const login = (email, password) => async (dispatch) => {
@@ -200,6 +200,7 @@ export const resetPassword = (token, passwords) => async (dispatch) => {
     dispatch({
       type: RESET_PASSWORD_FAIL,
       payload: error.response?.data?.message || error.message || "Server Error",
+      //  error.response.data.messag
     });
   }
 };
