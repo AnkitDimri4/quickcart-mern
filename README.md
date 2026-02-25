@@ -7,6 +7,9 @@
   - The **Backend** is built using Node.js and Express.js following REST API architecture with MongoDB for database storage and JWT-based secure authentication.
 ---
 
+> **Live Frontend:** [https://quickcart-mern.vercel.app/](https://quickcart-mern.vercel.app/)
+- > **Backend API (Deployed on Render):** `https://your-backend-url.onrender.com`
+---
 ## Project Screenshots
 
 ### UI Preview
