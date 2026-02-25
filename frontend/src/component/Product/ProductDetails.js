@@ -112,7 +112,7 @@ const ProductDetails = () => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title={`${product?.name || "Product"} -- ECOMMERCE`} />
+          <MetaData title={`${product?.name || "Product"} -- QuickCart`} />
           <div className="ProductDetails">
             <div className="carouselContainer">
               {product?.images?.length > 0 && (
@@ -235,3 +235,4 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
+
