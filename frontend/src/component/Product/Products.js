@@ -51,7 +51,7 @@ const Products = () => {
 
   return (
     <Fragment>
-      <MetaData title="PRODUCTS -- ECOMMERCE" />
+      <MetaData title="PRODUCTS -- QuickCart" />
       <h2 className="productsHeading">Products</h2>
 
       <div className="productsWrapper">
@@ -139,3 +139,4 @@ const Products = () => {
 };
 
 export default Products;
+
