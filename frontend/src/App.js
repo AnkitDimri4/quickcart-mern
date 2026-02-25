@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import WebFont from "webfontloader";
 import { useSelector } from "react-redux";
 
-import axios from "./axios";
+import axios from "./axiosIn";
 
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
@@ -148,3 +148,4 @@ function App() {
 }
 
 export default App;
+
