@@ -12,7 +12,7 @@ import {
   useElements,
 } from "@stripe/react-stripe-js";
 
-import axios from "../../axios";
+import axios from "../../axiosIn";
 
 import "./payment.css";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
