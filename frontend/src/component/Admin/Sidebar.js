@@ -31,7 +31,7 @@ const Sidebar = () => {
     <div className="sidebar">
       {/* Logo */}
       <Link to="/">
-        <img src={logo} alt="Ecommerce Logo" className="sidebarLogo" />
+        <img src={logo} alt="QuickCart Logo" className="sidebarLogo" />
       </Link>
 
       {/* Dashboard */}
@@ -103,3 +103,4 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
