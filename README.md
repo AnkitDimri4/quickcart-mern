@@ -14,7 +14,7 @@
 
 ### UI Preview
 
-| ![img1](https://github.com/user-attachments/assets/93a15a4a-7357-465a-a9e7-332493bd0002) | ![img2](https://github.com/user-attachments/assets/33ce5548-26be-4ada-b385-a697c73b7ef8) | ![img3](https://github.com/user-attachments/assets/5fc3aff4-c5fe-4357-92e9-6f078a243502) 
+| ![img1](https://github.com/user-attachments/assets/2eefd77e-6808-472b-85be-f4e43edf3b20) | ![img2](https://github.com/user-attachments/assets/33ce5548-26be-4ada-b385-a697c73b7ef8) | ![img3](https://github.com/user-attachments/assets/5fc3aff4-c5fe-4357-92e9-6f078a243502) 
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | ![img4](https://github.com/user-attachments/assets/edd1acd3-cff0-4c4d-a5b1-972b49fda2e2) | ![img5](https://github.com/user-attachments/assets/c0ac5cb3-8654-4b3d-9b51-de218058464f) | ![img6](https://github.com/user-attachments/assets/f6cf1e1a-3fa8-4f01-bf8e-cdbec67234c4) 
 | ![img7](https://github.com/user-attachments/assets/576dddd4-eb13-4eae-a87e-7c05a3074527) | ![img8](https://github.com/user-attachments/assets/508074b4-1e2e-46db-8288-50c8a5e693a3) | ![img9](https://github.com/user-attachments/assets/e51fd885-b93e-453a-bf5b-f76c03c25dd1) 
