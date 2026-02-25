@@ -41,7 +41,7 @@ const Home = () => {
               </div>
             )}
 
-            <p>Welcome to Ecommerce</p>
+            <p>Welcome to QuickCart</p>
             <h1>FIND AMAZING PRODUCTS BELOW</h1>
 
             <a href="#container">
@@ -70,4 +70,5 @@ const Home = () => {
 };
 
 export default Home;
+
 
