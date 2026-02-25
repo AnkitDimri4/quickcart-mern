@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../axios";
 
 import {
   ALL_PRODUCT_FAIL,
@@ -77,13 +77,15 @@ export const getAdminProduct = () => async (dispatch) => {
   }
 };
 
-// Create Product
 export const createProduct = (productData) => async (dispatch) => {
   try {
     dispatch({ type: NEW_PRODUCT_REQUEST });
 
     const config = {
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+      withCredentials: true,
     };
 
     const { data } = await axios.post(
@@ -96,10 +98,14 @@ export const createProduct = (productData) => async (dispatch) => {
       type: NEW_PRODUCT_SUCCESS,
       payload: data,
     });
+
   } catch (error) {
     dispatch({
       type: NEW_PRODUCT_FAIL,
-      payload: error.response?.data?.message || error.message || "Server Error",
+      payload:
+        error.response?.data?.message ||
+        error.message ||
+        "Server Error",
     });
   }
 };
@@ -236,3 +242,4 @@ export const deleteReviews = (reviewId, productId) => async (dispatch) => {
 export const clearErrors = () => async (dispatch) => {
   dispatch({ type: CLEAR_ERRORS });
 };
+
